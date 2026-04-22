@@ -8,7 +8,7 @@ Copy the `.claude/` directory into the root of your project:
 
 ```sh
 git clone https://github.com/suchipi/generic-claude-code-config.git
-cp -r generic-claude-code-config/.claude /path/to/your/repo/
+cp -R generic-claude-code-config/.claude /path/to/your/repo/
 ```
 
 Commit it alongside your code so Claude picks it up on every session. Edit or remove individual rules in [.claude/rules/](.claude/rules/) to fit the project.
