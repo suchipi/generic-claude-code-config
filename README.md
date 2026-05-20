@@ -19,7 +19,7 @@ Commit it alongside your code so Claude picks it up on every session. Edit or re
 
 A narrow permissions allowlist — read-only shell commands and read-only git commands are pre-approved so Claude doesn't block on permission prompts during routine exploration. Anything that mutates state (git commits, file writes via shell, etc.) still requires explicit approval.
 
-Also registers `.tmp/`, `/tmp`, and `/private/tmp` as additional working directories.
+Also registers `/tmp` and `/private/tmp` as additional working directories.
 
 ### [.claude/rules/](.claude/rules/)
 
@@ -30,9 +30,6 @@ Behavioral rules loaded into every session. Each rule is a Markdown file with op
 | [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md) | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
 | [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)         | Direct questions require verified answers with cited sources — no guessing.                                              |
 | [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)           | Read and trace the code before attempting fixes; no random stabs.                                                        |
-| [use-approved-tools-only.md](.claude/rules/use-approved-tools-only.md)             | Prefer the dedicated tools (Read, Edit, Grep, Glob, Write) over shell equivalents that would trigger permission prompts. |
-| [use-repo-tmp-dir.md](.claude/rules/use-repo-tmp-dir.md)                           | Use `.tmp/` in the repo root (gitignored) for scratch files instead of `/tmp`.                                           |
-| [no-git-mutations.md](.claude/rules/no-git-mutations.md)                           | No `git commit`, `push`, `merge`, `rebase`, etc. without explicit user approval.                                         |
 | [no-self-modification.md](.claude/rules/no-self-modification.md)                   | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
 | [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)           | The format convention for rule files themselves.                                                                         |
 

@@ -38,8 +38,7 @@
       "Bash(git rev-list:*)",
       "Bash(gh search:*)",
       "Bash(echo:*)",
-      "Bash(tee .tmp/:*)"
     ],
-    "additionalDirectories": ["/tmp", "/private/tmp", ".tmp"]
+    "additionalDirectories": ["/tmp", "/private/tmp"]
   }
 }
