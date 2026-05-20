@@ -37,7 +37,7 @@
       "WebSearch",
       "Bash(git rev-list:*)",
       "Bash(gh search:*)",
-      "Bash(echo:*)",
+      "Bash(echo:*)"
     ],
     "additionalDirectories": ["/tmp", "/private/tmp"]
   }
