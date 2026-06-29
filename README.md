@@ -30,6 +30,7 @@ Behavioral rules loaded into every session. Each rule is a Markdown file with op
 | [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md) | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
 | [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)         | Direct questions require verified answers with cited sources — no guessing.                                              |
 | [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)           | Read and trace the code before attempting fixes; no random stabs.                                                        |
+| [comment-density.md](.claude/rules/comment-density.md)                             | Be sparing with code comments; default to none unless the *why* is non-obvious. Thorough docs on public APIs are exempt.  |
 | [use-approved-tools-only.md](.claude/rules/use-approved-tools-only.md)             | Prefer the dedicated tools (Read, Edit, Grep, Glob, Write) over shell equivalents that would trigger permission prompts. |
 | [use-repo-tmp-dir.md](.claude/rules/use-repo-tmp-dir.md)                           | Use `.tmp/` in the repo root (gitignored) for scratch files instead of `/tmp`.                                           |
 | [no-git-mutations.md](.claude/rules/no-git-mutations.md)                           | No `git commit`, `push`, `merge`, `rebase`, etc. without explicit user approval.                                         |
