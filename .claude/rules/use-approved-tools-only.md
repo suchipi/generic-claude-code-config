@@ -1,4 +1,4 @@
-# Use Approved Tools Only — No Unapproved Alternatives
+# Use Approved Tools Only - No Unapproved Alternatives
 
 ALWAYS use the dedicated tools (Read, Glob, Grep, Edit, Write) instead of shell equivalents. Unapproved Bash commands will block on a permission prompt and halt all progress until the user approves. If the user is away, this can waste hours.
 
@@ -12,7 +12,7 @@ ALWAYS use the dedicated tools (Read, Glob, Grep, Edit, Write) instead of shell 
 
 ## Why
 
-The `.claude/settings.local.json` permissions allowlist is deliberately narrow — only safe, read-only shell commands are approved. If you reach for an unapproved shell command, the permission prompt will block until the user returns, which could be hours. The dedicated tools don't require shell permissions and are always available.
+The `.claude/settings.local.json` permissions allowlist is deliberately narrow - only safe, read-only shell commands are approved. If you reach for an unapproved shell command, the permission prompt will block until the user returns, which could be hours. The dedicated tools don't require shell permissions and are always available.
 
 ## How to apply
 
