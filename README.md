@@ -17,7 +17,7 @@ Commit it alongside your code so Claude picks it up on every session. Edit or re
 
 ### [.claude/settings.json](.claude/settings.json)
 
-A narrow permissions allowlist — read-only shell commands and read-only git commands are pre-approved so Claude doesn't block on permission prompts during routine exploration. Anything that mutates state (git commits, file writes via shell, etc.) still requires explicit approval.
+A narrow permissions allowlist - read-only shell commands and read-only git commands are pre-approved so Claude doesn't block on permission prompts during routine exploration. Anything that mutates state (git commits, file writes via shell, etc.) still requires explicit approval.
 
 Also registers `/tmp` and `/private/tmp` as additional working directories.
 
@@ -28,7 +28,7 @@ Behavioral rules loaded into every session. Each rule is a Markdown file with op
 | Rule                                                                               | Purpose                                                                                                                  |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md) | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
-| [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)         | Direct questions require verified answers with cited sources — no guessing.                                              |
+| [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)         | Direct questions require verified answers with cited sources - no guessing.                                              |
 | [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)           | Read and trace the code before attempting fixes; no random stabs.                                                        |
 | [comment-density.md](.claude/rules/comment-density.md)                             | Be sparing with code comments; default to none unless the _why_ is non-obvious. Thorough docs on public APIs are exempt. |
 | [no-self-modification.md](.claude/rules/no-self-modification.md)                   | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
@@ -36,7 +36,7 @@ Behavioral rules loaded into every session. Each rule is a Markdown file with op
 
 ## Philosophy
 
-The rules bias toward **caution over speed**: fewer unnecessary changes, fewer rewrites from overcomplication, and clarifying questions before mistakes. The permissions allowlist follows the same principle — Claude can explore freely but has to ask before mutating anything.
+The rules bias toward **caution over speed**: fewer unnecessary changes, fewer rewrites from overcomplication, and clarifying questions before mistakes. The permissions allowlist follows the same principle - Claude can explore freely but has to ask before mutating anything.
 
 ## License
 
