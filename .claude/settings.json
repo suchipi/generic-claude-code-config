@@ -44,5 +44,6 @@
       "Bash(find:*)"
     ],
     "additionalDirectories": ["/tmp", "/private/tmp", ".tmp"]
-  }
+  },
+  "outputStyle": "Concise"
 }
