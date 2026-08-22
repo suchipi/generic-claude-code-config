@@ -29,7 +29,9 @@ Behavioral rules loaded into every session. Each rule is a Markdown file with op
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md) | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
 | [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)         | Direct questions require verified answers with cited sources - no guessing.                                              |
+| [no-walls-of-text.md](.claude/rules/no-walls-of-text.md)                           | Structure responses as lists or tables; no burying findings or questions in prose.                                       |
 | [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)           | Read and trace the code before attempting fixes; no random stabs.                                                        |
+| [check-tests-for-flakiness.md](.claude/rules/check-tests-for-flakiness.md)         | Run each new or changed test 5+ times; fix flaky ones at the root instead of retrying.                                   |
 | [comments-why-only.md](.claude/rules/comments-why-only.md)                         | Be sparing with code comments; default to none unless the _why_ is non-obvious. Thorough docs on public APIs are exempt. |
 | [no-self-modification.md](.claude/rules/no-self-modification.md)                   | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
 | [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)           | The format convention for rule files themselves.                                                                         |
