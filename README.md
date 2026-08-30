@@ -2,6 +2,8 @@
 
 A reusable starting point for [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) configuration, extracted from [suchipi/quickjs](https://github.com/suchipi/quickjs). Drop the `.claude/` directory into a repo to get a curated set of behavioral rules and a narrow permissions allowlist.
 
+> This repo has two branches: `personal` and `work`. `personal` is more opinionated, and is what I use in my single-author hobby projects. `work` is what I use at work, and is less opinionated since there are multiple people working in the codebase with differing workflows.
+
 ## Usage
 
 Copy the `.claude/` directory into the root of your project:
