@@ -30,6 +30,7 @@ Behavioral rules loaded into every session. Each rule is a Markdown file with op
 | Rule                                                                               | Purpose                                                                                                                  |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md) | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
+| [flag-doomed-tasks-early.md](.claude/rules/flag-doomed-tasks-early.md)             | If the task can't succeed as asked, stop and say so then - not in the summary after doing it anyway.                     |
 | [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)         | Direct questions require verified answers with cited sources - no guessing.                                              |
 | [no-walls-of-text.md](.claude/rules/no-walls-of-text.md)                           | Structure responses as lists or tables; no burying findings or questions in prose.                                       |
 | [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)           | Read and trace the code before attempting fixes; no random stabs.                                                        |
@@ -37,6 +38,7 @@ Behavioral rules loaded into every session. Each rule is a Markdown file with op
 | [comments-why-only.md](.claude/rules/comments-why-only.md)                         | Be sparing with code comments; default to none unless the *why* is non-obvious. Thorough docs on public APIs are exempt.  |
 | [use-approved-tools-only.md](.claude/rules/use-approved-tools-only.md)             | Prefer the dedicated tools (Read, Edit, Write) over shell equivalents that would trigger permission prompts. |
 | [use-repo-tmp-dir.md](.claude/rules/use-repo-tmp-dir.md)                           | Use `.tmp/` in the repo root (gitignored) for scratch files instead of `/tmp`.                                           |
+| [ask-before-sudo.md](.claude/rules/ask-before-sudo.md)                             | Always ask before running `sudo`. Passwordless sudo is a convenience for the user, not consent for Claude.               |
 | [no-git-mutations.md](.claude/rules/no-git-mutations.md)                           | No `git commit`, `push`, `merge`, `rebase`, etc. without explicit user approval.                                         |
 | [no-self-modification.md](.claude/rules/no-self-modification.md)                   | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
 | [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)           | The format convention for rule files themselves.                                                                         |
