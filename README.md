@@ -36,6 +36,7 @@ Behavioral rules loaded into every session. Each rule is a Markdown file with op
 | [comments-why-only.md](.claude/rules/comments-why-only.md)                         | Be sparing with code comments; default to none unless the _why_ is non-obvious. Thorough docs on public APIs are exempt. |
 | [no-self-modification.md](.claude/rules/no-self-modification.md)                   | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
 | [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)           | The format convention for rule files themselves.                                                                         |
+| [keep-rules-terse.md](.claude/rules/keep-rules-terse.md)                           | Rule files stay short: their tokens cost every session, and a wordy rule dilutes the others.                             |
 
 ## Philosophy
 
