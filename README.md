@@ -27,17 +27,18 @@ Also registers `/tmp` and `/private/tmp` as additional working directories.
 
 Behavioral rules loaded into every session. Each rule is a Markdown file with optional YAML frontmatter specifying which paths it applies to (see [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)).
 
-| Rule                                                                               | Purpose                                                                                                                  |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md) | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
-| [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)         | Direct questions require verified answers with cited sources - no guessing.                                              |
-| [no-walls-of-text.md](.claude/rules/no-walls-of-text.md)                           | Structure responses as lists or tables; no burying findings or questions in prose.                                       |
-| [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)           | Read and trace the code before attempting fixes; no random stabs.                                                        |
-| [comments-why-only.md](.claude/rules/comments-why-only.md)                         | Be sparing with code comments; default to none unless the _why_ is non-obvious. Thorough docs on public APIs are exempt. |
-| [no-self-modification.md](.claude/rules/no-self-modification.md)                   | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
-| [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)           | The format convention for rule files themselves.                                                                         |
-| [keep-rules-terse.md](.claude/rules/keep-rules-terse.md)                           | Rule files stay short: their tokens cost every session, and a wordy rule dilutes the others.                             |
-| [write-like-a-human.md](.claude/rules/write-like-a-human.md)                       | A growing table of AI-prose tells to avoid, with what to write instead.                                                 |
+| Rule                                                                                           | Purpose                                                                                                                  |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md)             | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
+| [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)                     | Direct questions require verified answers with cited sources - no guessing.                                              |
+| [no-walls-of-text.md](.claude/rules/no-walls-of-text.md)                                       | Structure responses as lists or tables; no burying findings or questions in prose.                                       |
+| [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)                       | Read and trace the code before attempting fixes; no random stabs.                                                        |
+| [persist-long-running-command-output.md](.claude/rules/persist-long-running-command-output.md) | Avoid having to re-run long-running commands by saving their output to a file.                                           |
+| [comments-why-only.md](.claude/rules/comments-why-only.md)                                     | Be sparing with code comments; default to none unless the _why_ is non-obvious. Thorough docs on public APIs are exempt. |
+| [no-self-modification.md](.claude/rules/no-self-modification.md)                               | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
+| [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)                       | The format convention for rule files themselves.                                                                         |
+| [keep-rules-terse.md](.claude/rules/keep-rules-terse.md)                                       | Rule files stay short: their tokens cost every session, and a wordy rule dilutes the others.                             |
+| [write-like-a-human.md](.claude/rules/write-like-a-human.md)                                   | A growing table of AI-prose tells to avoid, with what to write instead.                                                  |
 
 ## Philosophy
 
