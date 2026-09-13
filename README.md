@@ -27,23 +27,24 @@ Also registers `.tmp/`, `/tmp`, and `/private/tmp` as additional working directo
 
 Behavioral rules loaded into every session. Each rule is a Markdown file with optional YAML frontmatter specifying which paths it applies to (see [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)).
 
-| Rule                                                                               | Purpose                                                                                                                  |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md) | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
-| [flag-doomed-tasks-early.md](.claude/rules/flag-doomed-tasks-early.md)             | If the task can't succeed as asked, stop and say so then - not in the summary after doing it anyway.                     |
-| [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)         | Direct questions require verified answers with cited sources - no guessing.                                              |
-| [no-walls-of-text.md](.claude/rules/no-walls-of-text.md)                           | Structure responses as lists or tables; no burying findings or questions in prose.                                       |
-| [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)           | Read and trace the code before attempting fixes; no random stabs.                                                        |
-| [write-non-flaky-tests.md](.claude/rules/write-non-flaky-tests.md)                 | Write tests that pin every input they depend on (clock, async, shared state, network) so they cannot be flaky.           |
-| [comments-why-only.md](.claude/rules/comments-why-only.md)                         | Be sparing with code comments; default to none unless the *why* is non-obvious. Thorough docs on public APIs are exempt.  |
-| [use-approved-tools-only.md](.claude/rules/use-approved-tools-only.md)             | Prefer the dedicated tools (Read, Edit, Write) over shell equivalents that would trigger permission prompts. |
-| [use-repo-tmp-dir.md](.claude/rules/use-repo-tmp-dir.md)                           | Use `.tmp/` in the repo root (gitignored) for scratch files instead of `/tmp`.                                           |
-| [ask-before-sudo.md](.claude/rules/ask-before-sudo.md)                             | Always ask before running `sudo`. Passwordless sudo is a convenience for the user, not consent for Claude.               |
-| [no-git-mutations.md](.claude/rules/no-git-mutations.md)                           | No `git commit`, `push`, `merge`, `rebase`, etc. without explicit user approval.                                         |
-| [no-self-modification.md](.claude/rules/no-self-modification.md)                   | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
-| [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)           | The format convention for rule files themselves.                                                                         |
-| [keep-rules-terse.md](.claude/rules/keep-rules-terse.md)                           | Rule files stay short: their tokens cost every session, and a wordy rule dilutes the others.                             |
-| [write-like-a-human.md](.claude/rules/write-like-a-human.md)                       | A growing table of AI-prose tells to avoid, with what to write instead.                                                 |
+| Rule                                                                                           | Purpose                                                                                                                  |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [general-behavioral-guidelines.md](.claude/rules/general-behavioral-guidelines.md)             | Karpathy-style guidelines: think before coding, keep it simple, make surgical changes, define success criteria.          |
+| [flag-doomed-tasks-early.md](.claude/rules/flag-doomed-tasks-early.md)                         | If the task can't succeed as asked, stop and say so then - not in the summary after doing it anyway.                     |
+| [no-assumptions-in-answers.md](.claude/rules/no-assumptions-in-answers.md)                     | Direct questions require verified answers with cited sources - no guessing.                                              |
+| [no-walls-of-text.md](.claude/rules/no-walls-of-text.md)                                       | Structure responses as lists or tables; no burying findings or questions in prose.                                       |
+| [understand-before-fixing.md](.claude/rules/understand-before-fixing.md)                       | Read and trace the code before attempting fixes; no random stabs.                                                        |
+| [write-non-flaky-tests.md](.claude/rules/write-non-flaky-tests.md)                             | Write tests that pin every input they depend on (clock, async, shared state, network) so they cannot be flaky.           |
+| [comments-why-only.md](.claude/rules/comments-why-only.md)                                     | Be sparing with code comments; default to none unless the _why_ is non-obvious. Thorough docs on public APIs are exempt. |
+| [use-approved-tools-only.md](.claude/rules/use-approved-tools-only.md)                         | Prefer the dedicated tools (Read, Edit, Write) over shell equivalents that would trigger permission prompts.             |
+| [use-repo-tmp-dir.md](.claude/rules/use-repo-tmp-dir.md)                                       | Use `.tmp/` in the repo root (gitignored) for scratch files instead of `/tmp`.                                           |
+| [persist-long-running-command-output.md](.claude/rules/persist-long-running-command-output.md) | Avoid having to re-run long-running commands by saving their output to a file.                                           |
+| [ask-before-sudo.md](.claude/rules/ask-before-sudo.md)                                         | Always ask before running `sudo`. Passwordless sudo is a convenience for the user, not consent for Claude.               |
+| [no-git-mutations.md](.claude/rules/no-git-mutations.md)                                       | No `git commit`, `push`, `merge`, `rebase`, etc. without explicit user approval.                                         |
+| [no-self-modification.md](.claude/rules/no-self-modification.md)                               | No editing `CLAUDE.md`, `.claude/rules/`, or `.claude/settings*.json` without explicit user approval.                    |
+| [claude-rules-conventions.md](.claude/rules/claude-rules-conventions.md)                       | The format convention for rule files themselves.                                                                         |
+| [keep-rules-terse.md](.claude/rules/keep-rules-terse.md)                                       | Rule files stay short: their tokens cost every session, and a wordy rule dilutes the others.                             |
+| [write-like-a-human.md](.claude/rules/write-like-a-human.md)                                   | A growing table of AI-prose tells to avoid, with what to write instead.                                                  |
 
 ## Philosophy
 
