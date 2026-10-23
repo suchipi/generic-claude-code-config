@@ -17,3 +17,4 @@ git pull
 cd "$TARGET_DIR"
 mkdir -p .claude/rules
 cp -R $SCRIPT_DIR/.claude/rules/* .claude/rules
+cp $SCRIPT_DIR/.claude/settings.json .claude/settings.json
