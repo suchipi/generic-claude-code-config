@@ -43,6 +43,7 @@
       "Bash(rg:*)",
       "Bash(find:*)"
     ],
+    "deny": ["WebFetch(domain:tcrf.net)", "WebFetch(domain:www.tcrf.net)"],
     "additionalDirectories": ["/tmp", "/private/tmp"]
   },
   "outputStyle": "Concise"
