@@ -6,12 +6,8 @@ set -euo pipefail
 TARGET_DIR=$(pwd)
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 
-if [[ "${1:-}" == "" ]]; then
-  echo "Specify the branch to sync with as the first argument to this script ('work' or 'personal')."
-fi
-
 cd "$SCRIPT_DIR"
-git checkout "$1"
+git checkout work
 git pull
 
 cd "$TARGET_DIR"
